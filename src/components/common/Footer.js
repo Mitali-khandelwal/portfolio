@@ -23,9 +23,9 @@ const Footer = () => {
     },
   ];
   return (
-    <div>
-      <div className="flex justify-around">
-        <ul className="text-white flex w-full justify-around  gap-3">
+    <div className="py-5">
+      <div className="flex justify-around p-4">
+        <ul className="text-white flex w-full justify-around flex-wrap  gap-3">
           <li className="flex items-center gap-2">
             <SlSocialLinkedin />
             <a href="https://www.linkedin.com/in/mitali-khandelwal-106250251/">
@@ -41,6 +41,11 @@ const Footer = () => {
             <a href="tel:+91 8955168159"> 8955165159</a>
           </li>
         </ul>
+      </div>
+      <div>
+        <p className="text-center text-gray-600 pb-4">
+         DWD| Design With Designer| Designed by Mitali Khandelwal
+        </p>
       </div>
     </div>
   );

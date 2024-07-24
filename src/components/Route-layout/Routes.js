@@ -5,9 +5,11 @@ import Home from "../common/Home";
 import Nopage from "../common/Nopage";
 import About from "../common/About";
 import MyWork from "../common/MyWork";
+import ScrollToTop from "../common/ScrollToTop";
 const RoutesLayout = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

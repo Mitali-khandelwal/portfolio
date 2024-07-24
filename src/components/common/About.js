@@ -11,7 +11,7 @@ import Framework from "../About/Framework";
 const About = () => {
   return (
     <div className="w-[100vw] flex justify-center items-center flex-col">
-      <div className=" flex justify-around items-center pb-12 pt-44 w-full">
+      <div className=" flex justify-around items-center pb-12 pt-44 w-full flex-wrap gap-4 ">
         <div className="text-pink-700 text-7xl">About Me</div>
         <div className="gradient-border text-white p-6 w-[50vw] flex flex-col gap-3">
           <h1 className="text-6xl">
@@ -22,6 +22,29 @@ const About = () => {
             expertise, and a user-centric approach to craft exceptional digital
             experiences.
           </p>
+        </div>
+      </div>
+    
+      {/* language */}
+      <div className="py-6">
+        <h3 className="text-white text-3xl font-semibold py-3 text-center">
+          Language
+        </h3>
+        <Language />
+      </div>
+      <div className="flex flex-wrap gap-8 md:gap-44" > 
+        <div>
+          <h3 className="text-white text-3xl font-semibold py-3 text-center md:text-left">
+            Area of Expertise
+          </h3>
+          <Expertise />
+        </div>
+
+        <div className="w-full md:w-fit">
+        <h3 className="text-white text-3xl font-semibold py-3 text-center md:text-left ">
+         Framework
+        </h3>
+        <Framework/>
         </div>
       </div>
       <div className="flex w-[56vw] gap-16 flex-wrap py-14">
@@ -54,28 +77,7 @@ const About = () => {
           <Experience />
         </div>
       </div>
-      {/* language */}
-      <div className="py-6">
-        <h3 className="text-white text-3xl font-semibold py-3 text-center">
-          Language
-        </h3>
-        <Language />
-      </div>
-      <div className="flex gap-44" > 
-        <div>
-          <h3 className="text-white text-3xl font-semibold py-3 ">
-            Area of Expertise
-          </h3>
-          <Expertise />
-        </div>
-
-        <div>
-        <h3 className="text-white text-3xl font-semibold py-3 text-center">
-         Framework
-        </h3>
-        <Framework/>
-        </div>
-      </div>
+   
       {/* certificate */}
       <div className="flex flex-col items-center justify-center py-3">
         <h3 className="text-white text-5xl font-semibold py-3">Certificate</h3>

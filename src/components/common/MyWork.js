@@ -6,8 +6,46 @@ import multicarousel from "../../images/multicarousel.png";
 import autocarousel from "../../images/autocarousel.png";
 
 const MyWork = () => {
+
+  
   const triggerRef = useRef([]);
   const [isTriggered, setIsTriggered] = useState([]);
+
+
+// handle animation change
+
+useEffect(() => {
+  const handleResize = () => {
+    const isMdScreen = window.matchMedia('(min-width: 1024px)').matches;
+
+    triggerRef.current.forEach((element, index) => {
+      if (isMdScreen) {
+        if (index === 0) {
+          element.querySelector('img').classList.add('slide-in-right');
+          element.querySelector('p').classList.add('slide-in-left');
+        } else if (isTriggered[index]) {
+          element.querySelector('img').classList.add('slide-in-left');
+          element.querySelector('p').classList.add('slide-in-right');
+        }
+      } else {
+        element.querySelector('img').classList.remove('slide-in-right', 'slide-in-left');
+        element.querySelector('p').classList.remove('slide-in-left', 'slide-in-right');
+      }
+    });
+  };
+
+  // Initial check
+  handleResize();
+
+  // Event listener for resize
+  window.addEventListener('resize', handleResize);
+
+  return () => {
+    window.removeEventListener('resize', handleResize);
+  };
+}, [isTriggered]);
+
+
 
   const data = [
     {
@@ -78,55 +116,39 @@ const MyWork = () => {
 
   return (
     <div className="mt-48 text-white">
-      <h3 className="text-center font-extrabold text-5xl pb-14">Projects</h3>
-      {data.map((item, index) => (
-        <div
-          key={item.id}
-          className={`flex justify-around mb-11 items-center flex-wrap ${
-            index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-          }`}
-          ref={(ele) => {
-            triggerRef.current[index] = ele;
-          }}
-        >
-          <div>
-            <img
-              src={item.img}
-              alt={item.title}
-              id={`${item.id}`}
-              className={`w-[40rem]
-              ${
-                index === 0 
-                  ? "slide-in-right"
-                  : isTriggered[index] && "slide-in-left"
-              }
-            `}
-
-            />
-          </div>
-          <div>
-            <a
-              href={item.path}
-              className="font-bold py-4 uppercase text-pink-700"
-            >
-              {item.title} :-
-            </a>
-            <p
-            className={`w-[40rem]
-            ${
-              index === 0 
-                ? "slide-in-left"
-                : isTriggered[index] && "slide-in-right"
-            }
-          `}
-
-            >
-              {item.content}
-            </p>
-          </div>
+    <h3 className="text-center font-medium tracking-widest text-5xl pb-14">Projects</h3>
+    {data.map((item, index) => (
+      <div
+        key={item.id}
+        className={`flex justify-around mb-11 items-center flex-wrap gap-8 md:gap-0 ${
+          index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'
+        }`}
+        ref={(ele) => {
+          triggerRef.current[index] = ele;
+        }}
+      >
+        <div>
+          <img
+            src={item.img}
+            alt={item.title}
+            id={`${item.id}`}
+            className={`w-[24rem] md:w-[40rem] text-justify`}
+          />
         </div>
-      ))}
-    </div>
+        <div>
+          <a href={item.path} className="font-bold py-4 uppercase text-pink-700">
+            {item.title} :-
+          </a>
+          <p className={`w-[24rem] md:w-[40rem] text-justify`}>
+            {item.content}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  
+  
   );
 };
 

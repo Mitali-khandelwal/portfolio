@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import logo from "../../images/logo.jpg";
+import { FaBars } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
 
 const Layout = () => {
   // State to manage the visibility of the mobile menu
@@ -65,34 +67,32 @@ const Layout = () => {
 
             {/* Mobile button */}
             <div className="md:hidden flex items-center">
-              <button className="mobile-menu-button" onClick={toggleMenu}>
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+              <button className="mobile-menu-button text-2xl" onClick={toggleMenu}>
+              {isMenuOpen ? <RxCross2 /> : <FaBars />}
               </button>
             </div>
           </div>
         </div>
 
         {/* Mobile menu */}
-        <div className={isMenuOpen ? "block md:hidden" : "hidden md:hidden"}>
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Features
-          </a>
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Pricing
-          </a>
+        <div className={isMenuOpen ? "block md:hidden text-center text-white text-2xl" : "hidden md:hidden " }>
+          <Link to="/" className="block py-2 px-4  hover:bg-black hover:text-white">
+            Home
+          </Link>
+          <Link
+            to="/mywork"
+            className="block py-2 px-4  hover:bg-black hover:text-white"
+          >
+            My Work
+          </Link>
+
+          <Link
+            to="/about"
+            className="block py-2 px-4  hover:bg-black hover:text-white"
+          >
+            About
+          </Link>
+        
         </div>
       </nav>
       <Outlet />
