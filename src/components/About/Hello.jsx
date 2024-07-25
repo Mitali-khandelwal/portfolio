@@ -34,14 +34,6 @@ const handleNavigate = () => {
 
         <button className="w-fit border p-4 ml-8 md:ml-0" onClick={handleNavigate}> Explore More</button>
       </div>
-{/* <span className="dot"></span> */}
-{/* <div class="shadow">
-  <div class="triangle-wrapper">
-    <div class="triangle">
-    </div>
-  </div>
-</div> */}
-
       <div>
         <div className="flex  flex-col items-center justify-center gap-2 relative">
           <img src={profile} alt="" className="w-[23rem] h-[30rem] rounded-sm " />

@@ -32,7 +32,7 @@ const About = () => {
         </h3>
         <Language />
       </div>
-      <div className="flex flex-wrap gap-8 md:gap-44" > 
+      <div className="flex flex-wrap gap-8 lg:gap-44" > 
         <div>
           <h3 className="text-white text-3xl font-semibold py-3 text-center md:text-left">
             Area of Expertise

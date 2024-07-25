@@ -13,7 +13,7 @@ const Language = () => {
 
   return (
     <div>
-      <ul className="text-white flex flex-wrap justify-center md:justify-between gap-14 py-5 text-xl font-bold ">
+      <ul className="text-white flex flex-wrap justify-center md:justify-between lg:gap-14 py-5 text-xl font-bold ">
         {skills.map((skill, index) => (
           <li key={index} className="flex flex-col items-center gap-2">
             <div
