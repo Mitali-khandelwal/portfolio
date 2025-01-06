@@ -38,7 +38,7 @@ const Footer = () => {
           </li>
           <li className="flex items-center gap-2">
             <IoCallOutline />
-            <a href="tel:+91 8955168159"> 8955165159</a>
+            <a href="tel:+91 8955168159"> 8955168159</a>
           </li>
         </ul>
       </div>

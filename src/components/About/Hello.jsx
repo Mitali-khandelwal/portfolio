@@ -21,10 +21,10 @@ const handleNavigate = () => {
            </span>
         </h1>
         <p className="w-[28rem] text-justify px-8 md:px-0">
-          As an accomplished web developer with 1.6 years of professional
+          As an accomplished web developer with 2 years of professional
           experience, I possess a robust skill set that includes expertise in
           React, HTML, CSS, Bootstrap, Material-UI (MUI), Tailwind CSS, and
-          Sass. My background demonstrates a strong commitment to delivering
+          SASS. My background demonstrates a strong commitment to delivering
           high-quality web solutions, leveraging modern technologies and
           frameworks to create responsive, user-friendly interfaces. My ability
           to seamlessly integrate these tools ensures that I can build visually

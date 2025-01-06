@@ -47,7 +47,7 @@ const About = () => {
         <Framework/>
         </div>
       </div>
-      <div className="flex w-[56vw] gap-16 flex-wrap py-14">
+      <div className="flex w-[56vw] gap-16 flex-wrap py-14 justify-center">
         {/* contact */}
         <div>
           <h3 className="text-white text-3xl font-semibold py-3">Contact</h3>
@@ -60,7 +60,7 @@ const About = () => {
             </li>
             <li className="flex items-center gap-2">
               <IoCallOutline />
-              <a href="tel:+91 8955168159"> 8955165159</a>
+              <a href="tel:+91 8955168159"> 8955168159</a>
             </li>
             <li className="flex items-center gap-2">
               <CgMail />
