@@ -37,11 +37,7 @@ const handleNavigate = () => {
       <div>
         <div className="flex  flex-col items-center justify-center gap-2 relative">
           <img src={profile} alt="" className="w-[20rem] h-[30rem] rounded-sm " />
-          <h2 className="m-auto text-center text-4xl md:text-5xl font-light absolute bottom-8 text-black">
-            {/* Mitali Khandelwal */}
-          </h2>
-
-          <p className="text-white">website Designer</p>
+          <p className="text-white">Website Designer</p>
         </div>
       </div>
     </div>
