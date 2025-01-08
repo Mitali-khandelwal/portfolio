@@ -16,7 +16,7 @@ const handleNavigate = () => {
           Hello , <br />
           <span className="text-white">I am {" "}
             <span className="text-pink-700">
-            Mitali !
+            Mitali khandelwal !
               </span>
            </span>
         </h1>
@@ -38,7 +38,7 @@ const handleNavigate = () => {
         <div className="flex  flex-col items-center justify-center gap-2 relative">
           <img src={profile} alt="" className="w-[23rem] h-[30rem] rounded-sm " />
           <h2 className="m-auto text-center text-4xl md:text-5xl font-light absolute bottom-8 text-black">
-            Mitali Khandelwal
+            {/* Mitali Khandelwal */}
           </h2>
 
           <p className="text-white">website Designer</p>

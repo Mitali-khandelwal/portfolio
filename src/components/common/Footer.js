@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="text-center text-gray-600 pb-4">
-         DWD| Design With Designer| Designed by Mitali Khandelwal
+         DWD | Design With Designer | Designed by Mitali Khandelwal
         </p>
       </div>
     </div>

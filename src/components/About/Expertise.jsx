@@ -18,6 +18,9 @@ const Expertise = () => {
       <p className="border border-pink-700 px-5 py-2 rounded hover:bg-white hover:text-pink-700 hover:border-black transition-all duration-300 delay-150">
         Jquery
       </p>
+      <p className="border border-pink-700 px-5 py-2 rounded hover:bg-white hover:text-pink-700 hover:border-black transition-all duration-300 delay-150">
+        Wordpress
+      </p>
     </div>
   );
 };
