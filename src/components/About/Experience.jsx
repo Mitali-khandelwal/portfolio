@@ -10,8 +10,11 @@ const Experience = () => {
     <div>
       <ul className="text-white flex flex-col gap-3">
         <li className="flex items-center gap-2 text-pink-700 font-extrabold">
+          <span className="text-white">
           <PiSuitcaseSimpleThin />
-          2023 - Present
+
+          </span>
+         Jan 2023 - Dec 2024
         </li>
         <li className="flex flex-col">
           <h3 className="font-bold">Website Designer or CSS Animator</h3>

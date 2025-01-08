@@ -13,7 +13,7 @@ const handleNavigate = () => {
     <div className="flex justify-center md:justify-around items-center flex-wrap-reverse gap-8">
       <div className="flex flex-col gap-8 ">
         <h1 className="font-extrabold text-4xl text-pink-700 text-center md:text-left">
-          Hello , <br />
+          Hello, <br />
           <span className="text-white">I am {" "}
             <span className="text-pink-700">
             Mitali khandelwal !
@@ -36,7 +36,7 @@ const handleNavigate = () => {
       </div>
       <div>
         <div className="flex  flex-col items-center justify-center gap-2 relative">
-          <img src={profile} alt="" className="w-[23rem] h-[30rem] rounded-sm " />
+          <img src={profile} alt="" className="w-[20rem] h-[30rem] rounded-sm " />
           <h2 className="m-auto text-center text-4xl md:text-5xl font-light absolute bottom-8 text-black">
             {/* Mitali Khandelwal */}
           </h2>

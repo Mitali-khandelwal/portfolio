@@ -47,7 +47,7 @@ const About = () => {
         <Framework/>
         </div>
       </div>
-      <div className="flex w-[56vw] gap-16 flex-wrap py-14 justify-center">
+      <div className="flex w-[56vw] gap-8 md:gap-16 flex-wrap py-14 justify-start md:justify-around">
         {/* contact */}
         <div>
           <h3 className="text-white text-3xl font-semibold py-3">Contact</h3>
@@ -58,10 +58,10 @@ const About = () => {
                 https://www.linkedin.com/in/mitali-khandelwal-106250251/
               </a>
             </li>
-            <li className="flex items-center gap-2">
+            {/* <li className="flex items-center gap-2">
               <IoCallOutline />
               <a href="tel:+91 8955168159"> 8955168159</a>
-            </li>
+            </li> */}
             <li className="flex items-center gap-2">
               <CgMail />
               <a href="mailto:mitalikh2001@gmail.com">

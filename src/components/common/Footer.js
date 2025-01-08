@@ -1,27 +1,9 @@
 import React from "react";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { IoCallOutline } from "react-icons/io5";
 import { CgMail } from "react-icons/cg";
-
+import cv from '../../images/mitali-designer.jpg'
+import { HiOutlineDocumentText } from "react-icons/hi";
 const Footer = () => {
-  const data = [
-    {
-      id: 1,
-      icon: <CgMail />,
-      con: "mitalikh2001@gmail.com",
-    },
-    {
-      id: 2,
-      icon: <SlSocialLinkedin />,
-      con: "https://www.linkedin.com/in/mitali-khandelwal-106250251/",
-    },
-
-    {
-      id: 3,
-      icon: <IoCallOutline />,
-      con: "8955168159",
-    },
-  ];
   return (
     <div className="py-5">
       <div className="flex justify-around p-4">
@@ -34,17 +16,17 @@ const Footer = () => {
           </li>
           <li className="flex items-center gap-2">
             <CgMail />
-            <a href="mailto:mitalikh2001@gmail.com"> mitalikh2001@gmail.com</a>
+            <a href="mailto:mitalikh2001@gmail.com" className="p-1"> mitalikh2001@gmail.com</a>
           </li>
           <li className="flex items-center gap-2">
-            <IoCallOutline />
-            <a href="tel:+91 8955168159"> 8955168159</a>
+        <HiOutlineDocumentText/>
+            <a href={cv} download> Download CV</a>
           </li>
         </ul>
       </div>
       <div>
         <p className="text-center text-gray-600 pb-4">
-         DWD | Design With Designer | Designed by Mitali Khandelwal
+          DWD | Design With Designer | Designed by Mitali Khandelwal
         </p>
       </div>
     </div>
